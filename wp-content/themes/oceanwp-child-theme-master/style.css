@@ -9,3 +9,79 @@ Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+body {
+  background-color: #ECE2DA;
+}
+
+
+
+.menu {
+
+  display: flex;
+  justify-content: flex-end !important;
+  
+}
+
+.site-branding {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding-left: 20px;
+  
+
+}
+
+
+
+.logo-section {
+  display: flex;
+  width: 100%;
+}
+
+.nav-item {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu ul {
+  display: flex;
+}
+
+
+
+
+
+.menu .nav-item {
+  padding: 0;
+  margin: 0;
+}
+
+.menu .nav-item a {
+  padding: 1em;
+  margin: 0;
+}
+
+.menu ul{
+  margin: 0;
+}
+
+.menu ul li:last-child {
+  background-color: #DC9F96;
+  color:#FFFFFF;
+}
+
+.menu ul li:last-child a {
+  color:#FFFFFF;
+}
+
+.menu ul li:last-child:hover {
+  background-color: #C02E44;
+}
+
+.site-footer {
+  background-color: #FFFFFF;
+}
+
+/* If it doesn't change, remove cache for tab (console > application > local storage > circle with bar) */

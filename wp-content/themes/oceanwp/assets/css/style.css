@@ -2994,7 +2994,7 @@ a.pure-button-selected {
 }
 #site-header.full_screen-header .menu-bar-wrap {
   float: right;
-  height: 100%;
+  height: 10%;
   display: table;
 }
 #site-header.full_screen-header .menu-bar-inner {
