@@ -19,7 +19,7 @@ body {
 .menu {
 
   display: flex;
-  justify-content: flex-end !important;
+  justify-content: flex-end;
   
 }
 
@@ -29,7 +29,7 @@ body {
   align-items: center; 
   justify-content: space-between;
   padding-left: 20px;
-  
+  width:  0%;
 
 }
 
@@ -60,7 +60,7 @@ body {
 
 .menu .nav-item a {
   padding: 1em;
-  margin: 0;
+  margin: 100px;
 }
 
 .menu ul{
