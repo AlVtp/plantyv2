@@ -17,7 +17,6 @@ body {
 
 
 .menu {
-
   display: flex;
   justify-content: flex-end;
   
@@ -29,8 +28,7 @@ body {
   align-items: center; 
   justify-content: space-between;
   padding-left: 20px;
-  width:  0%;
-
+  width: 100%;
 }
 
 
@@ -60,7 +58,7 @@ body {
 
 .menu .nav-item a {
   padding: 1em;
-  margin: 100px;
+  margin: 0px;
 }
 
 .menu ul{

@@ -39,7 +39,7 @@ function montheme_supports()
 }
 
 // Adds nav-item class to the li items in the menu
-function oceanchild_menu_class($classes)
+function montheme_menu_class($classes)
 {
 	$classes[] = 'nav-item';
 	return $classes;
