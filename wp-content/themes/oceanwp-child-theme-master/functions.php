@@ -57,3 +57,30 @@ function my_theme_enqueue_styles() {
   
   }
   add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+
+/*
+Hides the admin link when not logged in as admin
+
+( details : 1 :  extending Walker_Nav_Menu  -  overrides and customizes how the default nav menu output is generated.
+            2 :  start_el() method  -  this is called by the Walker_Nav_Menu class to output each menu item so that we can add custom logic here.
+            3 :  checking $item->title  -  this contains the menu item title text, so we check if it's equal to 'Admin'.
+			4 :  is_user_logged_in() - this WordPress function checks if the current visitor is a logged in user.
+			5 :  current_user_can('administrator') - this checks if the current user has the 'administrator' capability, i.e. is an admin.
+			6 :  return; - if our condition fails, we return before the default output is generated, thus hiding that item.
+			7 :  parent::start_el()  -  generates the default nav output if our condition passed.  )
+
+*/
+
+  class My_Walker_Nav_Menu extends Walker_Nav_Menu {
+
+	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+	  if ( $item->title == 'Admin' && !is_user_logged_in() && !current_user_can('administrator') ) {
+		return; 
+	  }
+	  
+	  parent::start_el( $output, $item, $depth, $args, $id );
+	
+	}
+  
+  }

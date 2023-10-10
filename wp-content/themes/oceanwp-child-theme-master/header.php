@@ -48,6 +48,7 @@
 			'theme_location' => 'primary',
 			'container' => false,
 			'menu_class' => 'navbar-nav mr-auto',
+			'walker' => new My_Walker_Nav_Menu()
 			));  
 		?>
 		</div>
