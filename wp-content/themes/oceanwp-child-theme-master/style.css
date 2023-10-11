@@ -14,7 +14,15 @@ body {
   background-color: #ECE2DA;
 }
 
+#main #content-wrap {
+  padding: 0px;
+}
 
+.container {
+  width: 100%;
+  margin: 0;
+  max-width: 100%;
+}
 
 .menu {
   display: flex;
