@@ -1,0 +1,239 @@
+/*
+Theme Name: OceanWP Child Theme
+Theme URI: https://oceanwp.org/
+Description: OceanWP WordPress theme. Sample child theme.
+Author: OceanWP  
+Author URI: https://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Import parent stylesheet */
+@import url("../oceanwp/style.css");
+
+/* GENERAL STYLES
+---------------------------------*/
+body {
+  background-color: #ECE2DA;
+}
+
+/* LAYOUT
+---------------------------------*/
+#main #content-wrap {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* HEADER
+---------------------------------*/
+.site-branding {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 100%;
+  height: 80px;
+}
+
+.logo-section {
+  display: flex;
+  width: 100%;
+}
+
+/* NAVIGATION
+---------------------------------*/
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  list-style-type: none;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu ul {
+  display: flex;
+  margin: 0;
+}
+
+.menu .nav-item {
+  padding: 0;
+  margin: 0;
+}
+
+.menu .nav-item a {
+  padding: 1.2em;
+  margin: 0;
+}
+
+.menu ul li:hover a {
+  color: #000;
+}
+
+.menu ul li:last-child {
+  background-color: #DC9F96;
+  color: #FFFFFF;
+  height: auto;
+}
+
+.menu ul li:last-child a {
+  color: #FFFFFF;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.menu ul li:last-child:hover {
+  background-color: #C02E44;
+  height: 80px;
+}
+
+/* Responsive menu overrides */
+@media (max-width: 757px) {
+
+  .menu ul li {
+    height: 80px;
+  }
+  
+  .menu ul li a {
+    height: 80px;
+  }
+  
+  .menu ul li:last-child {
+    height: 80px;
+  }
+  
+  .menu ul li:last-child a {
+    height: 80px;
+  }
+
+  .menu ul li:last-child:hover {
+    height: 80px;
+  }
+
+}
+
+/* Media query pour les écrans de moins de 500px de large */
+@media (max-width: 500px) {
+
+  .site-branding {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  
+  .menu .nav-item {
+    padding: 0.2em 0;
+    font-size: 16px; 
+  }
+  
+  .menu ul li:last-child {
+    font-size: auto;
+  }
+  .menu ul li {
+    height: auto;
+  }
+  
+  .menu ul li a {
+    height: auto;
+  }
+  
+  .menu ul li:last-child {
+    height: auto;
+  }
+  
+  .menu ul li:last-child a {
+    height: auto;
+  }
+
+  .menu ul li:last-child:hover {
+    height: auto;
+  }
+}
+
+
+/* FOOTER
+---------------------------------*/
+.site-footer {
+  background-color: #FFFFFF;
+}
+
+/* CONTACT FORM 7
+---------------------------------*/
+
+
+.wpcf7 input[type="text"] {
+ background-color: #ffffff;
+}
+
+.wpcf7 input[type="email"] {
+  background-color: #ffffff;
+ }
+
+ .wpcf7 textarea {
+  background-color: #ffffff;
+ }
+
+.wpcf7 input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+.wpcf7 button {
+  text-align: center;
+}
+
+/* CONTACT FORM 7 FORMULAIRE COMMANDER
+---------------------------------*/
+
+
+
+.commander {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid #FFFFFF 2px;
+  border-radius: 0; 
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.colonne1 {
+width: 50%;
+border-right: solid #FFFFFF 2px;
+border-radius: 0; 
+padding-right: 10%;
+
+}
+
+.colonne2 {
+  width: 50%;
+  padding-left: 10%;
+  }
+
+.titre1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.titre2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#wpcf7-f403-p41-o1 {
+  color: #FFFFFF; 
+  }
