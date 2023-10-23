@@ -1,0 +1,6 @@
+.wpress
+/wp-admin/*
+/wp-includes/*
+*.php
+*.html
+/wp-content/uploads/*

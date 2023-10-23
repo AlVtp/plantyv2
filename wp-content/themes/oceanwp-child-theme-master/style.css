@@ -2,49 +2,55 @@
 Theme Name: OceanWP Child Theme
 Theme URI: https://oceanwp.org/
 Description: OceanWP WordPress theme. Sample child theme.
-Author: OceanWP
+Author: OceanWP  
 Author URI: https://oceanwp.org/
 Template: oceanwp
 Version: 1.0
 */
 
-/* Parent stylesheet should be loaded from functions.php not using @import */
+/* Import parent stylesheet */
+@import url("../oceanwp/style.css");
 
+/* GENERAL STYLES
+---------------------------------*/
 body {
   background-color: #ECE2DA;
 }
 
+/* LAYOUT
+---------------------------------*/
 #main #content-wrap {
-  padding: 0px;
+  padding: 0;
 }
 
 .container {
   width: 100%;
-  margin: 0;
   max-width: 100%;
+  margin: 0;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
+/* HEADER
+---------------------------------*/
 .site-branding {
   background-color: #FFFFFF;
   display: flex;
-  align-items: center; 
+  align-items: center;
   justify-content: space-between;
   padding-left: 20px;
   width: 100%;
   height: 80px;
 }
 
-
-
 .logo-section {
   display: flex;
   width: 100%;
+}
+
+/* NAVIGATION
+---------------------------------*/
+.menu {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .nav-item {
@@ -56,11 +62,8 @@ body {
 
 .menu ul {
   display: flex;
+  margin: 0;
 }
-
-
-
-
 
 .menu .nav-item {
   padding: 0;
@@ -69,13 +72,7 @@ body {
 
 .menu .nav-item a {
   padding: 1.2em;
-  margin: 0px;
-}
-
-.menu ul{
   margin: 0;
-  color: #FFFFFF;
-
 }
 
 .menu ul li:hover a {
@@ -84,21 +81,420 @@ body {
 
 .menu ul li:last-child {
   background-color: #DC9F96;
-  color:#FFFFFF;
-  height: 80px;
+  color: #FFFFFF;
 }
 
 .menu ul li:last-child a {
-  color:#FFFFFF;
+  color: #FFFFFF;
+  height: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .menu ul li:last-child:hover {
   background-color: #C02E44;
+  height: 80px;
 }
 
 
+
+/* FOOTER
+---------------------------------*/
 .site-footer {
   background-color: #FFFFFF;
 }
 
-/* If it doesn't change, remove cache for tab (console > application > local storage > circle with bar) */
+/* CONTACT FORM 7
+---------------------------------*/
+
+
+.wpcf7 input[type="text"] {
+ background-color: #ffffff;
+}
+
+.wpcf7 input[type="email"] {
+  background-color: #ffffff;
+ }
+
+ .wpcf7 textarea {
+  background-color: #ffffff;
+ }
+
+.wpcf7 input[type="submit"] {
+  display: block;
+  background-color: #E0B9B4;
+  margin: auto;
+}
+
+.wpcf7 button {
+  text-align: center;
+  background-color: #E0B9B4;
+
+}
+
+/* CONTACT FORM 7 FORMULAIRE COMMANDER
+---------------------------------*/
+
+.commander {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: solid #FFFFFF 2px;
+  border-radius: 0; 
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.votrecommande {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.fraise, .pamplemousse, .framboise, .citron {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 90%;
+}
+
+.fraise img, .pamplemousse img, .framboise img, .citron img {
+  width: 100%;
+}
+
+.boutons1, .boutons2, .boutons3, .boutons4 {
+  display: flex;
+  flex-direction: row;
+}
+
+.champplusmoins1, .champplusmoins2, .champplusmoins3, .champplusmoins4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+
+.field1 input, .field2 input, .field3 input, .field4 input {
+  height: 72px !important;
+  width: 72px !important;
+  border-radius: 6px 0px 0px 6px !important;
+  font-size: 30px !important;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+.plusmoins1, .plusmoins2, .plusmoins3, .plusmoins4 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  box-shadow: none;
+}
+
+.plusmoins1 button, .plusmoins2 button, .plusmoins3 button, .plusmoins4 button {
+  height: 36px;
+  width: 36px;
+}
+
+.plus {
+  box-shadow: none;
+  border-color: white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid;
+  border-radius: 0px 6px 0px 0px;
+}
+
+.moins {
+  box-shadow: none;
+  border-color: white;
+  border-top: 1px solid;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-radius: 0px 0px 6px 0px;
+}
+
+
+.boutonok1 button, .boutonok2 button, .boutonok3 button, .boutonok4 button {
+  height: 72px;
+  width: 120px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+.colonnes {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid #FFFFFF 2px;
+  border-radius: 0; 
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.colonnes input {
+  border-radius: 6px !important;
+  height: 72px;
+}
+
+.colonne1 {
+width: 50%;
+border-right: solid #FFFFFF 2px;
+border-radius: 0; 
+padding-right: 10%;
+
+}
+
+.colonne2 {
+  width: 50%;
+  padding-left: 10%;
+  }
+
+.titre1, .titre2, .titre3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.submit input {
+    justify-content: center;
+    height: 72px;
+    width: 250px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+#wpcf7-f403-p41-o1 {
+  color: #FFFFFF; 
+  }
+
+
+  /* Responsive menu overrides */
+
+  @media (max-width: 1024px) {
+    
+    .boutons1, .boutons2, .boutons3, .boutons4 {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .votrecommande {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: 40px;
+    }
+    
+    .champplusmoins1, .champplusmoins2, .champplusmoins3, .champplusmoins4 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+      padding-left: 50%;
+      padding-right: 50%;
+    }
+
+    .boutonok1 button, .boutonok2 button, .boutonok3 button, .boutonok4 button {
+      width: 100%;
+      padding-left: 40%;
+      padding-right: 40%;
+    }
+
+    .colonnes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: none;
+      border-radius: 0; 
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+
+    .colonne1 {
+      width: 100%;
+      border-right: none;
+      border-radius: 0; 
+      padding-right: 0%;
+      }
+      
+      .colonne2 {
+        width: 100%;
+        padding-left: 0%;
+        }
+
+
+  }
+
+  @media (max-width: 757px) {
+
+  .menu ul li {
+    height: 80px;
+  }
+  
+  .menu ul li a {
+    height: 80px;
+  }
+  
+  .menu ul li:last-child {
+    height: 80px;
+  }
+  
+  .menu ul li:last-child a {
+    height: 80px;
+  }
+
+  .menu ul li:last-child:hover {
+    height: 80px;
+  }
+
+  .boutons1, .boutons2, .boutons3, .boutons4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .champplusmoins1, .champplusmoins2, .champplusmoins3, .champplusmoins4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .boutonok1 button, .boutonok2 button, .boutonok3 button, .boutonok4 button {
+    width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+
+  .colonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: none;
+    border-radius: 0; 
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .colonne1 {
+    width: 100%;
+    border-right: none;
+    border-radius: 0; 
+    padding-right: 0%;
+    }
+    
+    .colonne2 {
+      width: 100%;
+      padding-left: 0%;
+      }
+
+  .votrecommande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+}
+
+
+
+/* Media query pour les écrans de moins de 500px de large */
+@media (max-width: 500px) {
+
+  .site-branding {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+  
+  .menu .nav-item {
+    padding: 0.2em 0;
+    font-size: 16px; 
+  }
+
+  .menu ul li {
+    height: auto;
+  }
+  
+  .menu ul li a {
+    height: auto;
+  }
+  
+  .menu ul li:last-child {
+    height: auto;
+  }
+  
+  .menu ul li:last-child a {
+    height: auto;
+  }
+
+  .menu ul li:last-child:hover {
+    height: auto;
+  }
+
+  .boutons1, .boutons2, .boutons3, .boutons4 {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .champplusmoins1, .champplusmoins2, .champplusmoins3, .champplusmoins4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 50%;
+  }
+
+  .boutonok1 button, .boutonok2 button, .boutonok3 button, .boutonok4 button {
+    width: 100%;
+    padding-left: 40%;
+    padding-right: 40%;
+  }
+
+  .colonnes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: none;
+    border-radius: 0; 
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .colonne1 {
+    width: 100%;
+    border-right: none;
+    border-radius: 0; 
+    padding-right: 0%;
+    }
+    
+    .colonne2 {
+      width: 100%;
+      padding-left: 0%;
+      }
+
+  .votrecommande {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+}

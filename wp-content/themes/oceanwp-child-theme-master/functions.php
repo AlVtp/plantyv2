@@ -84,3 +84,4 @@ Hides the admin link when not logged in as admin
 	}
   
   }
+
